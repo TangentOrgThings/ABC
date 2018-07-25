@@ -16,9 +16,9 @@ definition(
     author: "Stephan Hackett",
     description: "Configure devices with buttons like the Aeon Labs Minimote and Lutron Pico Remotes.",
     category: "My Apps",
-    iconUrl: "https://cdn.rawgit.com/stephack/ABC/master/resources/images/abcNew.png",
-    iconX2Url: "https://cdn.rawgit.com/stephack/ABC/master/resources/images/abcNew.png",
-    iconX3Url: "https://cdn.rawgit.com/stephack/ABC/master/resources/images/abcNew.png",
+    iconUrl: "https://cdn.rawgit.com/TangentOrgThings/ABC/master/resources/images/abcNew.png",
+    iconX2Url: "https://cdn.rawgit.com/TangentOrgThings/ABC/master/resources/images/abcNew.png",
+    iconX3Url: "https://cdn.rawgit.com/TangentOrgThings/ABC/master/resources/images/abcNew.png",
 )
 
 preferences {
@@ -50,7 +50,7 @@ def mainPage() {
 
 def verImgCheck(childVer){
 	def params = [
-    	uri: "https://cdn.rawgit.com/stephack/ABC/master/resources/images/abc_${childVer}.png",
+    	uri: "https://cdn.rawgit.com/TangentOrgThings/ABC/master/resources/images/abc_${childVer}.png",
 	]
 	try {
    		httpGet(params) { resp ->
@@ -62,7 +62,7 @@ def verImgCheck(childVer){
     	}
 	} catch (e) {
     	log.error "ABC does not appear to be the latest version: Please update from IDE"
-    	return "https://cdn.rawgit.com/stephack/ABC/master/resources/images/update.png"
+    	return "https://cdn.rawgit.com/TangentOrgThings/ABC/master/resources/images/update.png"
 	}
 }
 

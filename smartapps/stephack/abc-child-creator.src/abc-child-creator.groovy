@@ -27,9 +27,9 @@ definition(
     description: "SHOULD NOT BE PUBLISHED",
     category: "My Apps",
     parent: "stephack:ABC Manager",
-    iconUrl: "https://cdn.rawgit.com/stephack/ABC/master/resources/images/abcNew.png",
-    iconX2Url: "https://cdn.rawgit.com/stephack/ABC/master/resources/images/abcNew.png",
-    iconX3Url: "https://cdn.rawgit.com/stephack/ABC/master/resources/images/abcNew.png",
+    iconUrl: "https://cdn.rawgit.com/TangentOrgThingsstephack/ABC/master/resources/images/abcNew.png",
+    iconX2Url: "https://cdn.rawgit.com/TangentOrgThingsstephack/ABC/master/resources/images/abcNew.png",
+    iconX3Url: "https://cdn.rawgit.com/TangentOrgThingsstephack/ABC/master/resources/images/abcNew.png",
 )
 
 preferences {
@@ -93,7 +93,7 @@ def getButtonSections(buttonNumber) {
     	def picNameNoSpace = "${state.buttonType}${state.currentButton}.png"-" "-" "-" "-"/"-"-"
         //log.debug picNameNoSpace
         section(){	//"Hardware specific info on button selection:") {
-			if(hwSpecifics== false) paragraph image: "https://cdn.rawgit.com/stephack/ABC/master/resources/images/${picNameNoSpace}", "${getSpecText()}"
+			if(hwSpecifics== false) paragraph image: "https://cdn.rawgit.com/TangentOrgThings/ABC/master/resources/images/${picNameNoSpace}", "${getSpecText()}"
     	}
         def myDetail
         for(i in 1..17) {//Build 1st 17 Button Config Options
