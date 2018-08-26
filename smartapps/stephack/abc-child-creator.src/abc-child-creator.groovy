@@ -526,6 +526,26 @@ def getSpecText(){
 			case 8: return "Single Tap Lower Paddle"; break
         }
     }
+    if(state.buttonType.contains("WS-100 Switch")) {
+    	switch (state.currentButton) {
+        	case 1: return "Single Tap Upper Paddle"; break
+			case 2: return "Single Tap Lower Paddle"; break
+        	case 3: return "Double-Tap Upper Paddle"; break
+			case 4: return "Double-Tap Lower Paddle"; break
+			case 5: return "Triple-Tap Upper Paddle"; break
+			case 6: return "Triple-Tap Lower Paddle"; break
+        }
+    }
+    if(state.buttonType.contains("WD-100 Dimmer")) {
+    	switch (state.currentButton) {
+        	case 1: return "Single Tap Upper Paddle"; break
+			case 2: return "Single Tap Lower Paddle"; break
+        	case 3: return "Double-Tap Upper Paddle"; break
+			case 4: return "Double-Tap Lower Paddle"; break
+			case 5: return "Triple-Tap Upper Paddle"; break
+			case 6: return "Triple-Tap Lower Paddle"; break
+        }
+    }
     if(state.buttonType.contains("Inovelli")) {
     	switch (state.currentButton){
         	case 1: return "NOT OPERATIONAL - DO NOT USE"; break
@@ -579,3 +599,5 @@ FOR NEW BUTTON DEVICE TYPES///////////////
 
 
 */
+
+
