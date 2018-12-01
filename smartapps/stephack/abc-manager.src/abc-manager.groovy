@@ -1,3 +1,5 @@
+// vim: set filetype=groovy tabstop=2 shiftwidth=2 softtabstop=2 expandtab smarttab :
+
 /*
  *	Advanced Button Controller (Parent/Child Version)
  *
