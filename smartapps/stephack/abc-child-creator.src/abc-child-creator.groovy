@@ -1,4 +1,4 @@
-// vim :set ts=2 sw=2 sts=2 expandtab smarttab :
+// vim: set filetype=groovy tabstop=2 shiftwidth=2 softtabstop=2 expandtab smarttab :
 
 /*  DO NOT PUBLISH !!!!
  *
