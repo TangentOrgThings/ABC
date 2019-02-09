@@ -82,7 +82,7 @@ def initialize() {
 }
 
 def aboutPage() {
-	dynamicPage(name: "aboutPage", title: none){
+	dynamicPage(name: "aboutPage", title: none) {
         textHelp()
 	}
 }

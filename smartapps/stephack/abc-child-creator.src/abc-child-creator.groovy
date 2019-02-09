@@ -135,7 +135,9 @@ def getButtonSections(buttonNumber) {
       section(" "){}
       section("Special", hideable: true, hidden: !shallHide("container_${buttonNumber}")) {
         input "container_${buttonNumber}_pushed", "device.VirtualContainer", title: "When Pushed", required: false, submitOnChange: collapseAll
-        if(showHeld())input "container_${buttonNumber}_held", "device.VirtualContainer", title: "When Held", required: false, submitOnChange: collapseAll
+        if (showHeld()) {
+          input "container_${buttonNumber}_held", "device.VirtualContainer", title: "When Held", required: false, submitOnChange: collapseAll
+        }
       }
     }
     }
