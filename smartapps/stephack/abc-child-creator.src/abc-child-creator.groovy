@@ -508,26 +508,26 @@ def getButtonSections(buttonNumber) {
     }
     if(state.buttonType.contains("WD100+ Dimmer")) {
       switch (state.currentButton){
-        case 1: return "Double-Tap Upper Paddle"; break
-        case 2: return "Double-Tap Lower Paddle"; break
-        case 3: return "Triple-Tap Upper Paddle";break
-        case 4: return "Triple-Tap Lower Paddle"; break
-        case 5: return "Press & Hold Upper Paddle\n(See user guide for quirks)"; break
-        case 6: return "Press & Hold Lower Paddle\n(See user guide for quirks)"; break
-        case 7: return "Single Tap Upper Paddle\n(See user guide for quirks)"; break
-        case 8: return "Single Tap Lower Paddle\n(See user guide for quirks)"; break
+        case 1: return "Single Tap Upper Paddle\n(See user guide for quirks)"; break
+        case 2: return "Single Tap Lower Paddle\n(See user guide for quirks)"; break
+        case 3: return "Press & Hold Upper Paddle\n(See user guide for quirks)"; break
+        case 4: return "Press & Hold Lower Paddle\n(See user guide for quirks)"; break
+        case 5: return "Double-Tap Upper Paddle"; break
+        case 6: return "Double-Tap Lower Paddle"; break
+        case 7: return "Triple-Tap Upper Paddle";break
+        case 8: return "Triple-Tap Lower Paddle"; break
       }
     }
     if(state.buttonType.contains("WS100+ Switch")) {
       switch (state.currentButton){
-        case 1: return "Double-Tap Upper Paddle"; break
-        case 2: return "Double-Tap Lower Paddle"; break
-        case 3: return "Triple-Tap Upper Paddle";break
-        case 4: return "Triple-Tap Lower Paddle"; break
-        case 5: return "Press & Hold Upper Paddle"; break
-        case 6: return "Press & Hold Lower Paddle"; break
-        case 7: return "Single Tap Upper Paddle";break
-        case 8: return "Single Tap Lower Paddle"; break
+        case 1: return "Single Tap Upper Paddle";break
+        case 2: return "Single Tap Lower Paddle"; break
+        case 3: return "Press & Hold Upper Paddle"; break
+        case 4: return "Press & Hold Lower Paddle"; break
+        case 5: return "Double-Tap Upper Paddle"; break
+        case 6: return "Double-Tap Lower Paddle"; break
+        case 7: return "Triple-Tap Upper Paddle";break
+        case 8: return "Triple-Tap Lower Paddle"; break
       }
     }
     if(state.buttonType.contains("WS-100 Switch")) {
